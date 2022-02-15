@@ -1,0 +1,77 @@
+/* Smartphones */
+
+@media screen and (max-device-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+    }
+    #navbar .logo {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    #navbar ul {
+        padding: 0.5rem;
+    }
+    #showcase .showcase-content {
+        padding: 2.5rem;
+    }
+    #showcase .showcase-content h1 {
+        line-height: 3.5rem;
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    #showcase .showcase-content p {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    #services .container {
+        padding: 0;
+        width: 100vw;
+    }
+    #services .items {
+        flex-direction: column;
+        
+    }
+    #about {
+        width: 100vw;
+    }
+    #about .about-img {
+        display: none;
+    }
+    #clients .container {
+        width: 100vw;        
+    }
+    #clients .container .items {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    #clients .container .items .client {
+        width: 100px;
+        padding: 2rem;
+        flex-basis: 50%;
+        text-align: center;
+    }
+    #clients .container .items .client img {
+        width: 100px;
+    }
+    #contact {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    #contact .contact-form {
+        width: 100vw;
+    }
+    #contact #map .map, #map > div, #map > div > div.ol-unselectable.ol-layers > div > canvas {
+        min-height: 600px;
+        width: 100vw;
+    }
+
+    #main-footer, #main-footer .container {
+        width: 100vw;
+    }
+}

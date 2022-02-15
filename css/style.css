@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: 'PT Sans', sans-serif;}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+br {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+/* Utility classes */
+
+.container {
+    width: 1140px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.py-1 { padding: 2rem 0; }
+.py-2 { padding: 3rem 0; }
+.py-3 { padding: 4rem 0; }
+
+.p-1 { padding: 2rem; }
+.p-2 { padding: 3rem; }
+.p-3 { padding: 4rem; }
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #00985F;
+}
+
+.l-heading {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.m-heading {
+    font-size: 2rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 1.8rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 2rem;
+    color: white;
+    background:#008f5a;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background: #27857b;
+}
+
+.btn-dark {
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem!important;
+    cursor: pointer;
+}
+
+.btn-dark:hover {
+    background: rgb(24, 25, 26);
+    color: white;
+    padding: 1rem!important;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color:rgb(24, 25, 26);
+}
+
+.bg-dark {
+    background: rgb(24, 25, 26);
+    color: white;
+}
+
+.bg-primary {
+    color: white;
+    background:#008f5a;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: rgb(56, 56, 56) dashed 1px;
+}
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 999;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0.25rem;
+    font-weight: 400;
+}
+
+#navbar ul li a:hover {
+    background:#00985F;
+    border-radius: 3px;
+}
+
+.text-primary-light {
+    color: #00985F;
+}
+
+/* Showcase */
+
+#showcase {
+    background: url(../img/hero-bg.jpg) no-repeat top center/cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 18rem;
+    /* Overlay */
+    position:absolute;
+    top: 0;
+    padding-top: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Section: Services */
+
+#services .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#services .items .item {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+#services .items .item i {
+    background: #49a080;
+    padding: 1.3rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#services .container h2 {
+    margin-top: 1.5rem;
+}
+
+/* Section: About */
+
+#about {
+    display: flex;
+}
+
+#about div {
+    flex: 1;
+    flex-basis: 50%;
+}
+
+#about .about-img {
+    background: url(../img/about-img.jpg) no-repeat center center/cover;
+}
+
+#about h3 {
+    margin-top: 3rem;
+}
+
+/* Section: Clients */
+
+#clients .container .items {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#clients .container .items div {
+    padding-bottom: 0!important;
+}
+
+#clients .container .items img {
+    filter: grayscale(100%);
+}
+
+/* Section: Contact */
+
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+    flex-basis: 50%;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem 0;
+}
+
+#contact .contact-form form {
+    margin-top: 2rem;
+}
+
+#contact .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: Barlow;
+    border-radius: 4px;
+    border: none;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+    outline: none;
+}
+
+#map {
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+/* Footer */
+
+#main-footer {
+    background:rgb(0, 0, 0);
+    color: white;
+    padding: 0.5rem 0;
+    font-weight: 100;
+    font-size: 14px;
+}
